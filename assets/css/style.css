@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap');
 
-.box-sizing:border-box;
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
+    background-color: #A72020;
 }
 
 /* Varibles */
@@ -37,6 +40,91 @@ p {
 
 
 /* Her skriver Rune */
+
+/* Header */
+header {
+
+    background-image: url(../img/julemarkedlys.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    position: relative;
+}
+
+header h1 {
+    color: var(--gold);
+    font-size: 98px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+header i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 32px;
+    color: black;
+    z-index: 10;
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 1.5rem;
+    background-color: var(--darkGreen);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    gap: var(--mdSpacer);
+    display: none;
+}
+
+input[type="text"] {
+    border: 1px, solid, white;
+    border-radius: 10px;
+}
+
+/* Main */
+
+main {
+    background-color: var(--lightRed);
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+    .infotekst {
+        margin-top: 50px;
+        border: 2px, solid, var(--gold);
+        background-color: var(--darkGreen);
+        color: var(--gold);
+        margin: 25px;
+    }
+
+
+}
 
 
 /* Her skriver Morten */
