@@ -1,3 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap');
+
+.box-sizing:border-box;
+
 body {
     margin: 0;
+}
+
+/* Varibles */
+
+:root {
+
+    --lightGreen: #007321;
+    --darkGreen: #193713;
+    --lightRed: #A72020;
+    --darkRed: #824C4C;
+    --gold: #FFC45F;
+    --smSpacer: 1rem;
+    --mdSpacer: 2rem;
+    --lgSpacer: 4rem;
+}
+
+/* Typography */
+
+h1 {
+    font-family: "Great Vibes";
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 p {
+    font-family: "Ibarra Real Nova", serif;
 }
