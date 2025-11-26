@@ -41,6 +41,120 @@ p {
 
 /* Her skriver Morten */
 
+html {
+    background-color: var(--darkGreen);
+}
+
+img {
+    width: 400px;
+}
+
+/* Header */
+.BHeroImg {
+    background-image: url(../img/fugleperspektiv2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    position: relative;
+}
+
+
+h1 {
+    text-align: center;
+    color: var(--gold);
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.BegSnack {
+    text-align: center;
+    color: white;
+}
+
+/* Nav */
+
+ul {
+    color: white;
+    display: flex;
+    gap: var(--smSpacer);
+    justify-content: flex-end;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+i {
+    font-size: 60px;
+    color: var(--gold);
+
+}
+
+/* .Ashop {
+    color: white;
+} */
+
+
+/* Sektioner */
+
+section {
+    gap: var(--lgSpacer);
+}
+
+.Asection {
+    background: var(--lightRed);
+    color: white;
+    display: grid;
+}
+
+.Bsection {
+    background-color: var(--gold);
+    color: black;
+}
+
+.Csection {
+    background-color: var(--lightRed);
+    color: white;
+
+}
+
+.Jsection {
+    background-color: var(--gold);
+    color: black;
+}
+
+.Ksection {
+    background-color: var(--lightRed);
+    color: white;
+}
+
+.Ssection {
+    background-color: var(--gold);
+    color: black;
+}
+
+.fa-solid {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Her skriver Freya */
 
