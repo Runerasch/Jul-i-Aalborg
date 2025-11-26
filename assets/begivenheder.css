@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Varibles */
+
+:root {
+
+    --lightGreen: #007321;
+    --darkGreen: #193713;
+    --lightRed: #A72020;
+    --darkRed: #824C4C;
+    --gold: #FFC45F;
+    --smSpacer: 1rem;
+    --mdSpacer: 2rem;
+    --lgSpacer: 4rem;
+}
+
+/* Typography */
+
+h1 {
+    font-family: "Great Vibes";
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: "Ibarra Real Nova", serif;
+}
+
+/* Her skriver Freya */
+
+header {
+
+    background-image: url(./img/fugleperspektiv.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--gold);
+    font-size: 98px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+header i {
+    display: none;
+
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 1.5rem;
+    background-color: var(--darkGreen);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    gap: var(--mdSpacer);
+
+}
+
+input[type="text"] {
+    border: 1px, solid, white;
+    border-radius: 10px;
+}
+
+/* Hero styling */
+
+.hero {
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+
+
+body {
+    background-color: var(--darkGreen);
+
+
+}
+
+main {
+    margin: 0 auto;
+    padding: var(--mdSpacer);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h1,
+.boerneaktiviteter {
+    color: var(--gold);
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: "Great Vibes", cursive;
+
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.seoversigten {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Article styling */
+
+
+
+article {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--mdSpacer);
+    padding: var(--mdSpacer);
+
+}
+
+article .text {
+    flex: 1;
+    max-width: 600px;
+}
+
+article .text p {
+    line-height: 1.5;
+}
+
+.boldtext {
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+article .image img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+article .image {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    box-sizing: border-box;
+
+
+}
+
+
+.Juletraestaending {
+    background-color: var(--lightRed);
+    width: 100%;
+    max-width: 1284px;
+    min-height: 300px;
+
+}
+
+.Sallingjuleshow {
+    background-color: var(--gold);
+    width: 100%;
+    max-width: 1284px;
+    min-height: 300px;
+}
+
+.Skoejtebane {
+    background-color: var(--lightRed);
+    width: 100%;
+    max-width: 1284px;
+    min-height: 300px;
+}
+
+.Julemanden {
+    background-color: var(--gold);
+    width: 100%;
+    max-width: 1284px;
+    min-height: 300px;
+}
+
+.Juletoget {
+    background-color: var(--lightRed);
+    width: 100%;
+    max-width: 1284px;
+    min-height: 300px;
+}
+
+.Karrusel {
+    background-color: var(--gold);
+    width: 100%;
+    max-width: 1284px;
+    min-height: 300px;
+}
+
+.Pariserhjul {
+    background-color: var(--lightRed);
+    width: 100%;
+    max-width: 1284px;
+    min-height: 300px;
+}
+
+.Juletraestaending,
+.Skoejtebane,
+.Juletoget,
+.Pariserhjul,
+h2 h3 p {
+    color: white;
+}
+
+/* Back-to-top arrow styling */
+.back-to-top {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    color: var(--gold);
+    font-size: 2rem;
+}
+
+footer {
+    background-color: #193713;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.date {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--smSpacer);
+}
+
+.date i {
+    font-size: 20px;
+    padding-top: var(--smSpacer);
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: auto;
+    right: 20px;
+    gap: 20px;
+}
+
+.socials i {
+    font-size: 30px;
+}
+
+/* Mobile version */
+
+@media (max-width: 800px) {
+    body {
+        font-size: 1rem;
+        max-width: 800px;
+        overflow-x: hidden;
+    }
+
+    main {
+        padding: var(--smSpacer);
+        gap: var(--smSpacer);
+    }
+
+    header {
+        background-size: cover;
+        height: 45vh;
+    }
+
+    .hero {
+        font-size: 148px;
+    }
+
+
+    .fa-bars {
+        visibility: visible;
+
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 38px;
+        color: white;
+        z-index: 10;
+    }
+
+    nav ul {
+        display: none;
+        list-style: none;
+        margin: 25px;
+        gap: 1rem;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    h1,
+    .boerneaktiviteter {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .seoversigten {
+        text-align: center;
+        font-size: 2rem;
+
+    }
+
+    article {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    p {
+        padding: 0 var(--smSpacer);
+        line-height: 140%;
+        font-size: 25px;
+
+    }
+
+    h2,
+    h3 {
+        font-size: 30px;
+        transform: translateX(1rem);
+    }
+
+    article .text {
+        padding: 1rem;
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    article .image {
+        width: 100%;
+        height: auto;
+        order: 2;
+        box-sizing: border-box;
+        border: none;
+
+    }
+
+    article .image img {
+        width: 100%;
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        display: flex;
+        justify-self: center;
+        border: 4px solid black;
+    }
+
+    .back-to-top {
+        bottom: 0;
+        font-size: 2rem;
+    }
+
+    .footer i,
+    .footer p {
+        font-size: 1rem;
+    }
+
+
+
+}
