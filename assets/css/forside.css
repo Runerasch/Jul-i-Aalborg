@@ -55,6 +55,14 @@ header {
     align-items: center;
 }
 
+header img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: auto;
+}
+
 header h1 {
     color: var(--gold);
     font-size: 98px;
@@ -75,7 +83,7 @@ header i {
     top: 10px;
     right: 10px;
     font-size: 38px;
-    color: white;
+    color: black;
     z-index: 10;
 }
 
@@ -135,7 +143,6 @@ input[type="text"] {
     margin-right: 25px;
     padding: 0;
     background-color: #FFC45F;
-    box-shadow: 3px 3px black;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -169,7 +176,6 @@ input[type="text"] {
     margin-right: 25px;
     padding: 0;
     background-color: #FFC45F;
-    box-shadow: 3px 3px black;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -203,7 +209,6 @@ input[type="text"] {
     margin-right: 25px;
     padding: 0;
     background-color: #FFC45F;
-    box-shadow: 3px 3px black;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -236,7 +241,6 @@ input[type="text"] {
     max-width: 100%;
     grid-column: 1 / 2;
     margin-bottom: 50px;
-
 }
 
 
@@ -323,8 +327,8 @@ footer {
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: auto;
     right: 20px;
+    top: 3075px;
     gap: 20px;
 }
 
@@ -342,6 +346,10 @@ footer {
         font-size: 148px;
     }
 
+    header img {
+        width: 120px;
+        height: auto;
+    }
 
     .fa-bars {
         visibility: hidden;
@@ -375,24 +383,30 @@ footer {
     .hoverB {
         grid-column: 1;
         height: 300px;
+        display: block;
 
     }
 
     .hoverR {
         grid-column: 2;
         height: 300px;
+        display: block;
     }
 
     .hoverS {
         grid-column: 3;
+        display: block;
         height: 300px;
     }
 
+
     .julemarked {
         grid-column: 1 / -1;
-        padding: 25px;
+        margin-top: 120px;
         height: 600px;
         width: 100%;
+        justify-self: center;
+
     }
 
     .nu {
@@ -414,6 +428,10 @@ footer {
         grid-column: 3;
         grid-row: 5;
 
+    }
+
+    .socials {
+        top: 2620px;
     }
 
 }
