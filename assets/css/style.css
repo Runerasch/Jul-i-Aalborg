@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap');
 
-.box-sizing:border-box;
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
 }
+
 
 /* Varibles */
 
@@ -74,6 +78,11 @@ h1 {
 
 /* Nav */
 
+nav {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
 ul {
     color: white;
     display: flex;
@@ -106,14 +115,246 @@ i {
 
 section {
     gap: var(--lgSpacer);
+    max-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+img {
+    max-height: 400px;
+    object-fit: cover;
 }
 
 .Asection {
     background: var(--lightRed);
     color: white;
+    /* margin-left: 75px;
+    margin-right: 75px; */
+    padding: 0;
+    box-shadow: 3px 3px black;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column: 1 / 2;
+    gap: 10px;
+    margin-bottom: 50px;
 }
 
+
+.Asection h2 {
+    font-size: 24px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+.Asection p {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.Asection img {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Bsection {
+    background: var(--lightRed);
+    color: white;
+    /* margin-left: 75px;
+    margin-right: 75px; */
+    padding: 0;
+    box-shadow: 3px 3px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column: 1 / 2;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+
+.Bsection h2 {
+    font-size: 24px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+.Bsection p {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.Bsection img {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.Csection {
+    background: var(--lightRed);
+    color: white;
+    /* margin-left: 75px;
+    margin-right: 75px; */
+    padding: 0;
+    box-shadow: 3px 3px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column: 1 / 2;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+
+.Csection h2 {
+    font-size: 24px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+.Csection p {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.Csection img {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Jsection {
+    background: var(--lightRed);
+    color: white;
+    /* margin-left: 75px;
+    margin-right: 75px; */
+    padding: 0;
+    box-shadow: 3px 3px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column: 1 / 2;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+
+.Jsection h2 {
+    font-size: 24px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+.Jsection p {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.Jsection img {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Ksection {
+    background: var(--lightRed);
+    color: white;
+    /* margin-left: 75px;
+    margin-right: 75px; */
+    padding: 0;
+    box-shadow: 3px 3px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column: 1 / 2;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+
+.Ksection h2 {
+    font-size: 24px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+.Ksection p {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.Ksection img {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Ssection {
+    background: var(--lightRed);
+    color: white;
+    /* margin-left: 75px;
+    margin-right: 75px; */
+    padding: 0;
+    box-shadow: 3px 3px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column: 1 / 2;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+
+.Ssection h2 {
+    font-size: 24px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+.Ssection p {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.Ssection img {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section h2 {
+    margin-left: 25px;
+}
+
+section p {
+    margin-left: 25px;
+    font-size: 12px;
+    font-weight: lighter;
+    max-width: 500px;
+}
+
+/* Test test test */
 .Bsection {
     background-color: var(--gold);
     color: black;
@@ -142,6 +383,14 @@ section {
 
 .fa-solid {}
 
+
+
+@media(min-width:400px) {
+
+    section {
+        grid-template-columns: ;
+    }
+}
 
 
 
