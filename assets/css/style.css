@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap');
 
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     box-sizing: border-box;
 }
+
 
 /* Varibles */
 
