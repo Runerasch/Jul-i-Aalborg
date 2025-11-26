@@ -115,6 +115,10 @@ input[type="text"] {
 
     nav{
         height: 10%;
+
+        .burger{
+            display: none;
+        }
     }
 
       img {
