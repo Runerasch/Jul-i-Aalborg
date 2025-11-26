@@ -12,10 +12,288 @@
 </head>
 
 <body>
+    <style>
+        /* customizable snowflake styling */
+        .snowflake {
+            color: #fff;
+            font-size: 1em;
+            font-family: Arial, sans-serif;
+            text-shadow: 0 0 5px #000;
+        }
+
+        .snowflake,
+        .snowflake .inner {
+            animation-iteration-count: infinite;
+            animation-play-state: running
+        }
+
+        @keyframes snowflakes-fall {
+            0% {
+                transform: translateY(0)
+            }
+
+            100% {
+                transform: translateY(110vh)
+            }
+        }
+
+        @keyframes snowflakes-shake {
+
+            0%,
+            100% {
+                transform: translateX(0)
+            }
+
+            50% {
+                transform: translateX(80px)
+            }
+        }
+
+        .snowflake {
+            position: fixed;
+            top: -10%;
+            z-index: 9999;
+            -webkit-user-select: none;
+            user-select: none;
+            cursor: default;
+            pointer-events: none;
+            animation-name: snowflakes-shake;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out
+        }
+
+        .snowflake .inner {
+            animation-duration: 10s;
+            animation-name: snowflakes-fall;
+            animation-timing-function: linear
+        }
+
+        .snowflake:nth-of-type(0) {
+            left: 1%;
+            animation-delay: 0s
+        }
+
+        .snowflake:nth-of-type(0) .inner {
+            animation-delay: 0s
+        }
+
+        .snowflake:first-of-type {
+            left: 10%;
+            animation-delay: 1s
+        }
+
+        .snowflake:first-of-type .inner,
+        .snowflake:nth-of-type(8) .inner {
+            animation-delay: 1s
+        }
+
+        .snowflake:nth-of-type(2) {
+            left: 20%;
+            animation-delay: .5s
+        }
+
+        .snowflake:nth-of-type(2) .inner,
+        .snowflake:nth-of-type(6) .inner {
+            animation-delay: 6s
+        }
+
+        .snowflake:nth-of-type(3) {
+            left: 30%;
+            animation-delay: 2s
+        }
+
+        .snowflake:nth-of-type(11) .inner,
+        .snowflake:nth-of-type(3) .inner {
+            animation-delay: 4s
+        }
+
+        .snowflake:nth-of-type(4) {
+            left: 40%;
+            animation-delay: 2s
+        }
+
+        .snowflake:nth-of-type(10) .inner,
+        .snowflake:nth-of-type(4) .inner {
+            animation-delay: 2s
+        }
+
+        .snowflake:nth-of-type(5) {
+            left: 50%;
+            animation-delay: 3s
+        }
+
+        .snowflake:nth-of-type(5) .inner {
+            animation-delay: 8s
+        }
+
+        .snowflake:nth-of-type(6) {
+            left: 60%;
+            animation-delay: 2s
+        }
+
+        .snowflake:nth-of-type(7) {
+            left: 70%;
+            animation-delay: 1s
+        }
+
+        .snowflake:nth-of-type(7) .inner {
+            animation-delay: 2.5s
+        }
+
+        .snowflake:nth-of-type(8) {
+            left: 80%;
+            animation-delay: 0s
+        }
+
+        .snowflake:nth-of-type(9) {
+            left: 90%;
+            animation-delay: 1.5s
+        }
+
+        .snowflake:nth-of-type(9) .inner {
+            animation-delay: 3s
+        }
+
+        .snowflake:nth-of-type(10) {
+            left: 25%;
+            animation-delay: 0s
+        }
+
+        .snowflake:nth-of-type(11) {
+            left: 65%;
+            animation-delay: 2.5s
+        }
+    </style>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+    </div>
+
+    <header>
+        <i class="fa-solid fa-bars"></i>
+        <h1 class="hero">Jul i Aalborg</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Forside</a></li>
+            <li><a href="#">Madhytter</a></li>
+            <li><a href="#">Salgshytter</a></li>
+            <li><a href="#">Begivenheder</a></li>
+            <input type="text" placeholder="Search..">
+        </ul>
+    </nav>
+
+    <main>
 
 
+        <div class="infotekst">
+            <h2>Træd ind i et julemarked fyldt med magi, hygge og nostalgi. Her skabes minder der varmer - selv på
+                de
+                koldeste dage.</h2>
+            <p>Midt i byen på Gammeltorv finder du alt, hvad julehjertet begærer i perioden fra d. 14 november til
+                d. 23
+                december – fra duften af nylavede æbleskiver, varm gløgg og sprøde flæskestegssandwiches til smukke
+                julekugler, håndlavet keramik og massevis af juletræer.
+            </p>
+            <p>Tag familien, vennerne eller kæresten med til en stemningsfuld oplevelse for både store og små.
+                Besøg julemanden i hans hyggelige hytte, snup en tur med juletoget gennem de oplyste gader, eller
+                nyd
+                udsigten over julebyen fra det flotte pariserhjul. </p>
+        </div>
+
+        <div class="hoverB">
+            <h3>Begivenheder</h3>
+            <p>Hop ind og se oversigten over de kommende begivenheder</p>
+            <img src="./assets/img/bodaften.PNG" alt="bod">
+        </div>
+        <div class="hoverR">
+            <h3>Madhytter</h3>
+            <p>Kom forbi og smag på vores lækre udvalg af forskellige madvarer</p>
+            <img src="./assets/img/fugleperspektiv2.jpg" alt="madhytter">
+        </div>
+        <div class="hoverS">
+            <h3>Salgshytter</h3>
+            <p>Se vores store udvalg af de forskellige salgsboder og tag julen med hjem</p>
+            <img src="./assets/img/julecafe.PNG" alt="cafe">
+        </div>
 
 
+        <img src="./assets/img/fugleperspektiv.jpg" class="julemarked" alt="julemarked">
+
+
+        <h3 class="nu">Det sker nu!</h3>
+        <div class="julemanden">
+            <img src="./assets/img/julemanden.jpg" alt="">
+            <p>Kom og mød julemanden d. 15 november når han ankommer direkte fra Grønland</p>
+        </div>
+        <h3 class="nu2">Nyheder!</h3>
+        <div class="juletog">
+            <img src="./assets/img/Juletog.JPG" alt="">
+            <p>Kom og se vores nye hytter, og få en uforglemmelig oplevelse</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="date">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>Mandag – fredag kl. 12.00 – 19.00 <br>
+                    Lørdag kl. 10.00 – 19.00 <br>
+                    Søndag kl. 10.00 – 16.00 <br>
+                    BLACK FRIDAY 28. november kl. 12.00 – 20.00 <br>
+                    Fra lørdag den 13. december hver dag kl. 10.00 – 18.00
+                </p>
+            </div>
+            <div class="date"><i class="fa-solid fa-location-dot"></i>
+                <p>Gammeltorv 6, 9000 Aalborg</p>
+            </div>
+            <div class="date"><i class="fa-solid fa-phone"></i>
+                <p>Telefon: 25 50 90 02</p>
+            </div>
+            <div class="date"> <i class="fa-solid fa-envelope"></i>
+                <p>Email:
+                    event@aalborgcity.dk</p>
+            </div>
+            <div class="socials"><i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
