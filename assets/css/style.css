@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap');
 
-.box-sizing:border-box;
+html{
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+
 
 body {
     margin: 0;
@@ -46,3 +50,258 @@ p {
 
 
 /* Her skriver Melanie */
+
+@media (min-width: 801px){
+
+      img {
+            width: 600px !important;
+            height: 400px !important;
+            border: 5px solid black;
+            object-fit: cover;
+        }
+
+        .tekst1, .tekst2{
+            max-width: 50%;
+        }
+
+
+.mad{
+    background-color: var(--darkGreen);
+  padding: 0 var(--lgSpacer) ;
+
+   .toggle{
+    display: none;
+   }
+
+   .dropbtn1{
+    display: none;
+   }
+    
+    h1{
+        justify-self: center;
+        color: var(--gold);
+        text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        font-size: 100px;
+        margin: 0;
+        }
+    }
+
+    h2{
+       
+         color: white;
+        border: none;
+        margin-bottom: 0;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    h3{
+        font-size:30px ;
+    }
+
+    p{
+        font-size: 25px;
+        line-height: 140%;
+       
+    }
+
+    
+     
+    .madcontainer{
+        padding: 0 var(--lgSpacer);
+
+     h2{
+         background-color: #193713;
+        border: 5px double #FFC45F;
+        justify-self:center;
+        color: var(--gold);
+        font-size: 30px;
+        text-align: center;
+       padding: var(--smSpacer) 45%;
+        margin-bottom: var(--smSpacer);
+        margin-top: var(--lgSpacer);
+     }
+
+        .spis1, .tag1 {
+            display: flex;
+            background-color:var(--lightRed);
+            color: white;
+            padding: var(--mdSpacer);
+            justify-content: space-between;
+            margin-bottom: var(--mdSpacer);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
+            p, h3{
+               transform: translateY(-2rem);
+              
+            }
+
+        }
+
+        .spis2, .tag2 {
+            display: flex;
+            background-color: var(--gold);
+            flex-direction: row-reverse;
+            padding: var(--smSpacer);
+            justify-content: space-between;
+             margin-bottom: var(--mdSpacer);
+              box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
+                p, h3{
+                 transform: translateY(-2rem);
+            }
+        }
+
+
+    }
+.up {
+   
+    display: flex;
+    justify-self: center;
+    margin: var(--lgSpacer) 0;
+    text-decoration: none;
+    color: #FFC45F;
+    font-size: 50px;
+  
+}
+    
+        
+}
+
+
+/* MOBIL VERSION AF MADHYTTER */
+
+@media (max-width: 800px){
+
+    body{
+        background-color: var(--darkGreen);
+    }
+
+       img {
+            width: 400px !important;
+            height: 300px !important;
+            border: 5px solid black;
+            object-fit: cover;
+           display: flex;
+           justify-self:center;
+        }
+
+        .tekst1, .tekst2{
+            max-width: 100%;
+        }
+
+
+.mad{
+    background-color: var(--darkGreen);
+
+    
+    
+    h1{
+        justify-self: center;
+        color: var(--gold);
+        text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        font-size: 70px;
+        margin: 0;
+        }
+    }
+
+    h2{
+       color: white;
+       text-align: center;
+    }
+
+
+    .spis h2, .tag h2{
+        display: none;
+    }
+    .dropbtn1{
+        display: none;
+        font-size: 30px;
+        margin-top: var(--lgSpacer);
+        display: flex;
+        justify-self: center;
+        border: 5px double var(--gold);
+        background-color: #193713;
+        color: var(--gold);
+        padding: var(--smSpacer);
+        font-family: ibarra real nova, serif;
+        margin-bottom: var(--smSpacer);
+        cursor: pointer;
+       
+        
+    }
+
+    .toggle{
+        display: none;
+    }
+
+    .content1{
+        display: none;
+        position: static;
+        z-index: auto;
+        overflow: hidden;
+        width: 100%;
+        max-width: 800px;
+        background-color: var(--darkGreen);
+        background-color: #193713;
+        margin-bottom: var(--lgSpacer);
+    }
+
+    .toggle:checked + .dropbtn1 + .content1{
+        display: block;
+    }
+
+    h3{
+        font-size:30px ;
+    }
+
+    p{
+        font-size: 25px;
+        line-height: 140%;
+       
+    }
+
+     .spis1, .tag1 {
+            
+            background-color:var(--lightRed);
+            color: white;
+            justify-content: space-between;
+            padding: var(--mdSpacer) ;
+            margin-bottom: var(--mdSpacer);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
+            p, h3{
+               transform: translateY(-2rem);
+              padding:0 var(--smSpacer) ;
+              text-align: justify;
+            }
+
+
+        }
+
+        .spis2, .tag2 {
+            
+            background-color: var(--gold);
+            padding: var(--mdSpacer);
+            justify-content: space-between;
+             margin-bottom: var(--mdSpacer);
+              box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
+                p, h3{
+                 transform: translateY(-2rem);
+                padding:0 var(--smSpacer) ;
+                text-align: justify;
+            }
+        }
+
+        .up {
+   
+    display: none;
+  
+    }
+
+
+    }
+
+    
+    
