@@ -78,9 +78,18 @@ header i {
 
 }
 
+nav img {
+    width: 60px !important;
+    height: 60px !important;
+    border: none;
+    align-self: flex-start;
+    justify-content: left;
+    border-radius: 35%;
+}
+
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     line-height: 1.5rem;
     background-color: var(--darkGreen);
     color: white;
